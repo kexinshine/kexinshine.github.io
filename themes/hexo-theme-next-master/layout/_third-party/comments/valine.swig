@@ -24,6 +24,12 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       recordIP   : {{ theme.valine.recordIP }},
       serverURLs : '{{ theme.valine.serverURLs }}'
     });
+    var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
   }, window.Valine);
 });
 </script>
