@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 科小鑫的博客
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: 科小鑫
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
@@ -106,3 +106,27 @@ deploy:
   type: git
   repo: https://github.com/kexinshine/kexinshine.github.io.git
   branch: master
+
+
+search:
+path: search.xml
+field: post
+format: html
+limit: 10000
+
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  log: false
+  model:
+    use: live2d-widget-model-hijiki
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true

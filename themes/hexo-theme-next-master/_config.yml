@@ -40,8 +40,8 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
+  small: /images/favicon.ico
+  medium: /images/favicon.ico
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
@@ -52,7 +52,7 @@ language_switcher: false
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  #since: 2015
+  since: 2021
 
   # Icon between year and copyright info.
   icon:
@@ -118,8 +118,8 @@ darkmode: false
 menu:
   home: / || fa fa-home
   #about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
@@ -177,7 +177,7 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
+  GitHub: https://github.com/kexinshine || fab fa-github
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
@@ -190,7 +190,8 @@ social:
 
 social_icons:
   enable: true
-  icons_only: false
+  GitHub: github
+  icons_only: true
   transition: false
 
 # Blog rolls
@@ -247,7 +248,17 @@ post_meta:
     another_day: true
   categories: true
 
+
+
 # Post wordcount display settings
+
+post_wordcount:
+  item_text: true
+  wordcount: true #单篇文章字数
+  min2read: true #单篇阅读时长
+  totalcount: true #站点总字数
+  separated_meta: true
+  
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
   separated_meta: true
@@ -368,7 +379,7 @@ back2top:
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
@@ -739,7 +750,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
@@ -853,10 +864,10 @@ pace:
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
 three:
-  enable: false
-  three_waves: false
-  canvas_lines: false
-  canvas_sphere: false
+  enable: true
+  three_waves: true
+  canvas_lines: true
+  canvas_sphere: true
 
 # Canvas-ribbon
 # Dependencies: https://github.com/theme-next/theme-next-canvas-ribbon
@@ -867,6 +878,25 @@ canvas_ribbon:
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
 
+
+
+
+needmoreshare2:
+  enable: true
+  postbottom:
+    enable: true
+    options:
+      iconStyle: default
+      boxForm: horizontal
+      position: bottomCenter
+      networks: Weibo,Wechat,QQZone
+  float:
+    enable: true
+    options:
+      iconStyle: default
+      boxForm: vertical
+      position: topRight
+      networks: Weibo,Wechat,QQZone
 
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING SETTINGS
@@ -995,3 +1025,5 @@ vendors:
 css: css
 js: js
 images: images
+
+
