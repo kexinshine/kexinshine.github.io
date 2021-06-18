@@ -34,9 +34,16 @@
     <title>2-hexo迁移</title>
     <url>/2021/06/18/2-hexo%E8%BF%81%E7%A7%BB/</url>
     <content><![CDATA[<h1 id="多Git账号管理"><a href="#多Git账号管理" class="headerlink" title="多Git账号管理"></a>多Git账号管理</h1><h2 id="配置ssh"><a href="#配置ssh" class="headerlink" title="配置ssh"></a>配置ssh</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;913178007@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
-<p>分别生成多个密钥例如id_rsa(公司git),id_rsa_me(个人博客git)，并分别将.pub里的内容复制到各自的ssh里</p>
+<p>分别生成多个密钥例如id_rsa(公司git)，id_rsa_me(个人博客git)，并分别将.pub里的内容复制到各自的ssh里</p>
 <h2 id="配置config"><a href="#配置config" class="headerlink" title="配置config"></a>配置config</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vi ～/.ssh/config</span><br><span class="line"></span><br><span class="line"><span class="comment">#company</span></span><br><span class="line">Host xxx.com</span><br><span class="line">HostName xxx.com</span><br><span class="line">User *@xxx.com</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment">#blog</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">User 913178007@qq.com</span><br><span class="line">IdentityFile ~/.ssh/id_rsa_me</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
+
+<h1 id="安装hexo-mac系统"><a href="#安装hexo-mac系统" class="headerlink" title="安装hexo(mac系统)"></a>安装hexo(mac系统)</h1><h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p><a href="https://nodejs.org/en/">Node.js</a></p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo npm install --unsafe-perm --verbose -g hexo</span><br><span class="line">sudo npm install --unsafe-perm --verbose -g hexo-server</span><br></pre></td></tr></table></figure>
+
+
+
+
 ]]></content>
       <categories>
         <category>hexo</category>
