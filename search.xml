@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/06/18/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>1-两数之和</title>
+    <url>/2021/01/21/1-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</url>
+    <content><![CDATA[<h1 id="方法一：暴力枚举"><a href="#方法一：暴力枚举" class="headerlink" title="方法一：暴力枚举"></a>方法一：暴力枚举</h1><h2 id="思路及算法"><a href="#思路及算法" class="headerlink" title="思路及算法"></a>思路及算法</h2><p>最容易想到的方法是枚举数组中的每一个数 <code>x</code>，寻找数组中是否存在 <code>target - x</code>。<br>当我们使用遍历整个数组的方式寻找 <code>target - x</code> 时，需要注意到每一个位于 <code>x</code> 之前的元素都已经和 <code>x</code> 匹配过，因此不需要再进行匹配。而每一个元素不能被使用两次，所以我们只需要在 <code>x</code> 后面的元素中寻找 <code>target - x</code>。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span>(<span class="params">self, nums: List[<span class="built_in">int</span>], target: <span class="built_in">int</span></span>) -&gt; List[int]:</span></span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(nums)):</span><br><span class="line">                a = target - nums[i]</span><br><span class="line">                <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i + <span class="number">1</span>, <span class="built_in">len</span>(nums)):</span><br><span class="line">                    <span class="keyword">if</span> a == nums[j]:</span><br><span class="line">                        <span class="keyword">return</span> [i, j]</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h1 id="方法二：哈希表"><a href="#方法二：哈希表" class="headerlink" title="方法二：哈希表"></a>方法二：哈希表</h1><h2 id="思路及算法-1"><a href="#思路及算法-1" class="headerlink" title="思路及算法"></a>思路及算法</h2><p>注意到方法一的时间复杂度较高的原因是寻找 <code>target - x</code> 的时间复杂度过高。因此，我们需要一种更优秀的方法，能够快速寻找数组中是否存在目标元素。如果存在，我们需要找出它的索引。<br>使用哈希表，可以将寻找 <code>target - x</code> 的时间复杂度降低到从 O(N) 降低到 O(1)。<br>这样我们创建一个哈希表，对于每一个 <code>x</code>，我们首先查询哈希表中是否存在 <code>target - x</code>，然后将 <code>x</code> 插入到哈希表中，即可保证不会让 <code>x</code> 和自己匹配。</p>
+<h2 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span>(<span class="params">self, nums: List[<span class="built_in">int</span>], target: <span class="built_in">int</span></span>) -&gt; List[int]:</span></span><br><span class="line">        hashtable = <span class="built_in">dict</span>()</span><br><span class="line">        <span class="keyword">for</span> i, num <span class="keyword">in</span> <span class="built_in">enumerate</span>(nums):</span><br><span class="line">            <span class="keyword">if</span> target - num <span class="keyword">in</span> hashtable:</span><br><span class="line">                <span class="keyword">return</span> [hashtable[target - num], i]</span><br><span class="line">            hashtable[nums[i]] = i</span><br><span class="line">        <span class="keyword">return</span> []</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>LeetCode</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>Hash</tag>
+      </tags>
+  </entry>
+</search>
