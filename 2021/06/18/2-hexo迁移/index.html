@@ -22,13 +22,13 @@
 
   <meta name="description" content="多Git账号管理配置ssh1ssh-keygen -t rsa -C &quot;913178007@qq.com&quot; 分别生成多个密钥例如id_rsa(公司git),id_rsa_me(个人博客git)，并分别将.pub里的内容复制到各自的ssh里 配置config12345678910111213vi ～&#x2F;.ssh&#x2F;config#companyHost xxx.comHostName">
 <meta property="og:type" content="article">
-<meta property="og:title" content="科小鑫的博客">
+<meta property="og:title" content="2-hexo迁移">
 <meta property="og:url" content="http://example.com/2021/06/18/2-hexo%E8%BF%81%E7%A7%BB/index.html">
 <meta property="og:site_name" content="科小鑫的博客">
 <meta property="og:description" content="多Git账号管理配置ssh1ssh-keygen -t rsa -C &quot;913178007@qq.com&quot; 分别生成多个密钥例如id_rsa(公司git),id_rsa_me(个人博客git)，并分别将.pub里的内容复制到各自的ssh里 配置config12345678910111213vi ～&#x2F;.ssh&#x2F;config#companyHost xxx.comHostName">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-06-18T12:37:53.485Z">
-<meta property="article:modified_time" content="2021-06-18T12:37:53.486Z">
+<meta property="article:published_time" content="2021-06-18T12:48:28.000Z">
+<meta property="article:modified_time" content="2021-06-18T12:49:12.241Z">
 <meta property="article:author" content="科小鑫">
 <meta property="article:tag" content="git">
 <meta property="article:tag" content="hexo">
@@ -47,7 +47,7 @@
   };
 </script>
 
-  <title> | 科小鑫的博客</title>
+  <title>2-hexo迁移 | 科小鑫的博客</title>
   
 
 
@@ -203,7 +203,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          2-hexo迁移
         </h1>
 
         <div class="post-meta">
@@ -212,8 +212,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-18 20:37:53" itemprop="dateCreated datePublished" datetime="2021-06-18T20:37:53+08:00">2021-06-18</time>
+              <time title="创建时间：2021-06-18 20:48:28 / 修改时间：20:49:12" itemprop="dateCreated datePublished" datetime="2021-06-18T20:48:28+08:00">2021-06-18</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -226,7 +227,7 @@
             </span>
 
           
-            <span id="/2021/06/18/2-hexo%E8%BF%81%E7%A7%BB/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
+            <span id="/2021/06/18/2-hexo%E8%BF%81%E7%A7%BB/" class="post-meta-item leancloud_visitors" data-flag-title="2-hexo迁移" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -260,6 +261,7 @@
         <h1 id="多Git账号管理"><a href="#多Git账号管理" class="headerlink" title="多Git账号管理"></a>多Git账号管理</h1><h2 id="配置ssh"><a href="#配置ssh" class="headerlink" title="配置ssh"></a>配置ssh</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;913178007@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
 <p>分别生成多个密钥例如id_rsa(公司git),id_rsa_me(个人博客git)，并分别将.pub里的内容复制到各自的ssh里</p>
 <h2 id="配置config"><a href="#配置config" class="headerlink" title="配置config"></a>配置config</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">vi ～/.ssh/config</span><br><span class="line"></span><br><span class="line"><span class="comment">#company</span></span><br><span class="line">Host xxx.com</span><br><span class="line">HostName xxx.com</span><br><span class="line">User *@xxx.com</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment">#blog</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">User 913178007@qq.com</span><br><span class="line">IdentityFile ~/.ssh/id_rsa_me</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 
     </div>
 
