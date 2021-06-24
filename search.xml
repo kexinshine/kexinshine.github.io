@@ -53,4 +53,25 @@
         <tag>hexo</tag>
       </tags>
   </entry>
+  <entry>
+    <title>3-MarkDown语法</title>
+    <url>/2021/06/24/3-MarkDown%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<!--d
+| 元素 | Markdown语法 |
+| :---: | :---: |
+| 标题 | # H1<br>## H2<br>### H3 |
+| 粗体 | **bold text** |
+| 斜体 | *italicized text* |
+| 块引用 | > blockquote |
+| 有序列表 | 1. First item<br>2. Second item<br>3. Third item |
+| 无序列表 | - First item<br>- Second item<br>- Third item |
+| 代码 | `code` |
+| 代码块 | ```python<br>print("hello world!)<br>``` |
+| 水平线 | --- |
+| 超链接 | [title](https://www.example.com) |
+| 图片 | ![alt text](image.jpg) |
+-->
+<a id="more"></a>
+]]></content>
+  </entry>
 </search>
