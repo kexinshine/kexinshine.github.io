@@ -84,11 +84,11 @@
 </tr>
 <tr>
 <td align="center">粗体</td>
-<td align="left"><strong>bold text</strong></td>
+<td align="left"><code>**bold text**</code></td>
 </tr>
 <tr>
 <td align="center">斜体</td>
-<td align="left"><em>italicized text</em></td>
+<td align="left"><code>*italicized text*</code></td>
 </tr>
 <tr>
 <td align="center">块引用</td>
@@ -104,11 +104,11 @@
 </tr>
 <tr>
 <td align="center">代码</td>
-<td align="left"><code>code</code></td>
+<td align="left"><code>`code`</code></td>
 </tr>
 <tr>
 <td align="center">代码块</td>
-<td align="left"><code>python&lt;br&gt;print(&quot;hello world!)&lt;br&gt;</code></td>
+<td align="left">`````python<code>&lt;br&gt;</code>print(“hello world!”)``<br>```````</td>
 </tr>
 <tr>
 <td align="center">水平线</td>
@@ -116,7 +116,7 @@
 </tr>
 <tr>
 <td align="center">超链接</td>
-<td align="left"><a href="https://www.example.com/">title</a></td>
+<td align="left"><a href="https://kexinshine.github.io/">科小鑫的博客</a></td>
 </tr>
 <tr>
 <td align="center">图片</td>
