@@ -76,81 +76,75 @@
 <tr>
 <th align="center">元素</th>
 <th align="left">Markdown语法</th>
-<th align="center">示例 ｜</th>
 </tr>
 </thead>
 <tbody><tr>
 <td align="center">标题</td>
 <td align="left"># H1<br>## H2<br>### H3</td>
-<td align="center"># 一号标题<br> ## 二号标题 ｜</td>
 </tr>
 <tr>
 <td align="center">粗体</td>
 <td align="left"><code>**bold text**</code></td>
-<td align="center"><strong>粗体</strong> ｜</td>
 </tr>
 <tr>
 <td align="center">斜体</td>
 <td align="left"><code>*italicized text*</code></td>
-<td align="center"><em>斜体</em> ｜</td>
 </tr>
 <tr>
 <td align="center">块引用</td>
 <td align="left">&gt; blockquote</td>
-<td align="center">&gt; 块引用<br> &gt;&gt; 嵌套块引用</td>
 </tr>
 <tr>
 <td align="center">有序列表</td>
 <td align="left">1. First item<br>2. Second item</td>
-<td align="center">1. 起因<br>2. 经过<br>3. 结果</td>
 </tr>
 <tr>
 <td align="center">无序列表</td>
 <td align="left">- First item<br>- Second item<br>- Third item</td>
-<td align="center">- 语文<br>- 数学<br>- 英语 ｜</td>
 </tr>
 <tr>
 <td align="center">代码</td>
 <td align="left"><code>`code`</code></td>
-<td align="center">这是一句代码 <code>fmt.Println(&quot;hello world!&quot;)</code></td>
 </tr>
 <tr>
 <td align="center">代码块</td>
 <td align="left"><code>```python</code><br><code>print(&quot;hello world!&quot;)</code><br><code>```</code></td>
-<td align="center">``` python</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="left"></td>
-<td align="center">if <strong>name</strong> = “<strong>main</strong>“:</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="left"></td>
-<td align="center">print(“hello world!”)</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td align="left"></td>
-<td align="center">```</td>
 </tr>
 <tr>
 <td align="center">水平线</td>
 <td align="left">—</td>
-<td align="center"></td>
 </tr>
 <tr>
 <td align="center">超链接</td>
 <td align="left"><code>[科小鑫的博客](https://kexinshine.github.io)</code></td>
-<td align="center"></td>
 </tr>
 <tr>
 <td align="center">图片</td>
 <td align="left"><code>![alt text](image.jpg)</code></td>
-<td align="center"></td>
 </tr>
 </tbody></table>
 <a id="more"></a>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h2 id="粗体"><a href="#粗体" class="headerlink" title="粗体"></a><strong>粗体</strong></h2><h2 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a><em>斜体</em></h2><h2 id="块引用"><a href="#块引用" class="headerlink" title="块引用"></a>块引用</h2><blockquote>
+<p>块引用</p>
+<blockquote>
+<p>嵌套引用</p>
+</blockquote>
+</blockquote>
+<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><ol>
+<li>起因</li>
+<li>经过</li>
+<li>结果</li>
+</ol>
+<h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><ul>
+<li>语文</li>
+<li>数学</li>
+<li>英语</li>
+</ul>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>这是一行代码：<code>fmt.Println(&quot;hello world!&quot;)</code></p>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ = <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    print(<span class="string">&quot;hello world!&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="水平线"><a href="#水平线" class="headerlink" title="水平线"></a>水平线</h2><hr>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p><a href="https://kexinshine.github.io/">科小鑫的博客</a></p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="image.jpg" alt="alt text"> </p>
 ]]></content>
       <categories>
         <category>MarkDown</category>
