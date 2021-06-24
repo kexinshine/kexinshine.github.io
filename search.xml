@@ -108,7 +108,7 @@
 </tr>
 <tr>
 <td align="center">代码块</td>
-<td align="left">`````python<code>&lt;br&gt;</code>print(“hello world!”)``<br>```````</td>
+<td align="left"><code>```python</code><br><code>print(&quot;hello world!&quot;)</code><br><code>```</code></td>
 </tr>
 <tr>
 <td align="center">水平线</td>
