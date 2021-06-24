@@ -116,11 +116,11 @@
 </tr>
 <tr>
 <td align="center">超链接</td>
-<td align="left"><a href="https://kexinshine.github.io/">科小鑫的博客</a></td>
+<td align="left"><code>[科小鑫的博客](https://kexinshine.github.io)</code> <a href="https://kexinshine.github.io/">科小鑫的博客</a></td>
 </tr>
 <tr>
 <td align="center">图片</td>
-<td align="left"><img src="image.jpg" alt="alt text"></td>
+<td align="left"><code>![alt text](image.jpg)</code></td>
 </tr>
 </tbody></table>
 <a id="more"></a>
