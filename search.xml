@@ -76,54 +76,59 @@
 <tr>
 <th align="center">元素</th>
 <th align="left">Markdown语法</th>
+<th align="center">示例 ｜</th>
 </tr>
 </thead>
 <tbody><tr>
 <td align="center">标题</td>
 <td align="left"># H1<br>## H2<br>### H3</td>
+<td align="center"># 一号标题<br> ## 二号标题 ｜</td>
 </tr>
 <tr>
 <td align="center">粗体</td>
 <td align="left"><code>**bold text**</code></td>
+<td align="center"><strong>粗体</strong> ｜</td>
 </tr>
 <tr>
 <td align="center">斜体</td>
 <td align="left"><code>*italicized text*</code></td>
+<td align="center"><em>斜体</em> ｜</td>
 </tr>
 <tr>
 <td align="center">块引用</td>
 <td align="left">&gt; blockquote</td>
+<td align="center">&gt; 块引用<br> &gt;&gt; 嵌套块引用</td>
 </tr>
 <tr>
 <td align="center">有序列表</td>
-<td align="left">1. First item<br>2. Second item<br>3. Third item</td>
+<td align="left">1. First item<br>2. Second item</td>
+<td align="center">1. 起因<br>2. 经过<br>3. 结果</td>
 </tr>
 <tr>
 <td align="center">无序列表</td>
 <td align="left">- First item<br>- Second item<br>- Third item</td>
+<td align="center">- 语文<br>- 数学<br>- 英语 ｜</td>
 </tr>
 <tr>
 <td align="center">代码</td>
 <td align="left"><code>`code`</code></td>
+<td align="center">这是一句代码 <code>fmt.Println(&quot;hello world!&quot;)</code> ｜</td>
 </tr>
 <tr>
 <td align="center">代码块</td>
 <td align="left"><code>```python</code><br><code>print(&quot;hello world!&quot;)</code><br><code>```</code></td>
+<td align="center">```python</td>
 </tr>
 <tr>
-<td align="center">水平线</td>
-<td align="left">—</td>
-</tr>
-<tr>
-<td align="center">超链接</td>
-<td align="left"><code>[科小鑫的博客](https://kexinshine.github.io)</code> <a href="https://kexinshine.github.io/">科小鑫的博客</a></td>
-</tr>
-<tr>
-<td align="center">图片</td>
-<td align="left"><code>![alt text](image.jpg)</code></td>
+<td align="center">print(“hello world!”)</td>
+<td align="left"></td>
+<td align="center"></td>
 </tr>
 </tbody></table>
-<a id="more"></a>
+<pre><code class="|">| 水平线 | --- |
+| 超链接 | `` [科小鑫的博客](https://kexinshine.github.io) `` |
+| 图片 | `` ![alt text](image.jpg) `` |
+&lt;!--more--&gt;</code></pre>
 ]]></content>
       <categories>
         <category>MarkDown</category>
