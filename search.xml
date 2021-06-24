@@ -112,17 +112,12 @@
 <tr>
 <td align="center">代码</td>
 <td align="left"><code>`code`</code></td>
-<td align="center">这是一句代码 <code>fmt.Println(&quot;hello world!&quot;)</code> ｜</td>
+<td align="center">这是一句代码 <code>fmt.Println(&quot;hello world!&quot;)</code></td>
 </tr>
 <tr>
 <td align="center">代码块</td>
 <td align="left"><code>```python</code><br><code>print(&quot;hello world!&quot;)</code><br><code>```</code></td>
-<td align="center">```python</td>
-</tr>
-<tr>
-<td align="center">print(“hello world!”)</td>
-<td align="left"></td>
-<td align="center"></td>
+<td align="center">```python <br> print(“hello world!”) <br></td>
 </tr>
 </tbody></table>
 <pre><code class="|">| 水平线 | --- |
