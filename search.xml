@@ -146,7 +146,7 @@
 <h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ = <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    print(<span class="string">&quot;hello world!&quot;</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="水平线"><a href="#水平线" class="headerlink" title="水平线"></a>水平线</h2><hr>
 <h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p><a href="https://kexinshine.github.io/">科小鑫的博客</a></p>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>![](/images/favicon.ico 科小鑫的头像) </p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="/images/favicon.ico" title="科小鑫的头像"> </p>
 ]]></content>
       <categories>
         <category>MarkDown</category>
