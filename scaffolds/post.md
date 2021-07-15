@@ -1,8 +1,8 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
-categories: 
+tags: []
+categories:  
 ---
 <!--d
 | 元素 | Markdown语法 |
