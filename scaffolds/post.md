@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 tags: []
-categories:  
+categories: []  
 ---
 <!--d
 | 元素 | Markdown语法 |
