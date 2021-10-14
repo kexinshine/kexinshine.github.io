@@ -188,28 +188,4 @@
         <tag>Goland</tag>
       </tags>
   </entry>
-  <entry>
-    <title>超市</title>
-    <url>/2021/10/14/%E8%B6%85%E5%B8%82/</url>
-    <content><![CDATA[<!--d
-| 元素 | Markdown语法 |
-| :---: | :---: |
-| 标题 | # H1<br>## H2<br>### H3 |
-| 粗体 | **bold text** |
-| 斜体 | *italicized text* |
-| 块引用 | > blockquote |
-| 有序列表 | 1. First item<br>2. Second item<br>3. Third item |
-| 无序列表 | - First item<br>- Second item<br>- Third item |
-| 代码 | `code` |
-| 代码块 | ```python<br>print("hello world!)<br>``` |
-| 水平线 | --- |
-| 超链接 | [title](https://www.example.com) |
-| 图片 | ![alt text](image.jpg) |
--->
-<h1 id="超市"><a href="#超市" class="headerlink" title="超市"></a>超市</h1><blockquote>
-<p>又是整整一天的伏案<br>赶在夕阳落幕前<br>进楼下的超市转转<br>往来的人们挑选蔬果和酸奶<br>这烟火气息就像记忆中你的温软<br>一个白衣女孩从货架那段印面而来<br>蹙着眉费劲地抱着她满载的购物篮<br>她身上有我最熟悉不过的香味和步态<br>我唐突地说我想帮忙拎一小段  </p>
-<p>她可能笑话这生硬的搭讪<br>也可能以为我对她有好感<br>我拎着篮子在她身后走得慢<br>是重温和你逛超市的傍晚</p>
-</blockquote>
-]]></content>
-  </entry>
 </search>
